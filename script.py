@@ -6,14 +6,6 @@ class TreeNode:
     def __repr__(self):
         return self.story_piece
 
-######
-# VARIABLES FOR TREE
-######
-
-######
-# TESTING AREA
-######
-print("Once upon a time...")
 
 story_root = TreeNode(
 """
@@ -24,4 +16,6 @@ Do you:
 2 ) Run to the left...
 """
 )
+
+print("Once upon a time...")
 print(story_root)
