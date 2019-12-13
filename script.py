@@ -12,6 +12,14 @@ class TreeNode:
     def traverse(self):
         story_node = self
         print(story_node)
+        while len(story_node.choices) != 0:
+            choice = input("Enter 1 or 2 to continue the story: ")
+            if choice not in ["1", "2"]:
+                continue
+            chosen_index = int(choice) - 1
+            chosen_child = story_node.choices[chosen_index]
+            print(chosen_child)
+            story_node = chosen_child
 
 user_choice = input("What is your name? ")
 
