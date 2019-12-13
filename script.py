@@ -6,6 +6,7 @@ class TreeNode:
     def __repr__(self):
         return self.story_piece
 
+user_choice = input("What is your name? ")
 
 story_root = TreeNode("""
 You are in a forest clearing. There is a path to the left.
